@@ -1,0 +1,13 @@
+name = "julia_repo_setup"
+uuid = "abaa0e88-a45f-4691-aa5a-4bc44c0aea8a"
+authors = ["Norel <norel.evoagile@gmail.com> and contributors"]
+version = "0.1.0-DEV"
+
+[compat]
+julia = "1.8.5"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
