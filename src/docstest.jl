@@ -1,3 +1,4 @@
+using Documenter
 export hello 
 
 """
