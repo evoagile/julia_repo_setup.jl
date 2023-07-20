@@ -1,5 +1,5 @@
 module julia_repo_setup
 
-# Write your package code here.
+include("arithmatics.jl")
 
 end
