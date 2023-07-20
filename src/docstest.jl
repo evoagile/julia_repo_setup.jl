@@ -15,6 +15,9 @@ hello(who::String) = "Hello, $who"
 # Code evaluation `@example`
 
 ```@example
-A = rand(ComplexF64, 10, 15)
-real.(A)
+import Random # hide
+Random.seed!(1) # hide
+A = rand(3, 3)
+b = [1, 2, 3]
+A \ b
 ```
