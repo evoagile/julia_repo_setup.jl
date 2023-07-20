@@ -7,7 +7,7 @@ Return "Hello, `who`".
 
 ```jldoctest
 julia> hello("Stranger")
-"Hello Stranger"
+"Hello, Stranger"
 ```
 """
 hello(who::String) = "Hello, $who"
