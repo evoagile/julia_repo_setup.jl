@@ -1,4 +1,4 @@
-export plus, sine, cosine, binom 
+export plus, sine, cosine, binom, bar 
 
 """
     plus(x, y)
@@ -45,4 +45,21 @@ This is the binomial coefficient.
 function binom(x::Number)
   bino = 0
   bino
+end
+
+"""
+    bar(x[, y])
+
+Compute the Bar index between `x` and `y`.
+
+If `y` is unspecified, compute the Bar index between all pairs of columns of `x`.
+
+# Examples
+```julia-repl
+julia> bar([1, 2], [1, 2])
+1
+```
+"""
+function bar(x::Number)
+  bar = 0
 end
