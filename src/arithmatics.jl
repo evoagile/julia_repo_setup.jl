@@ -59,6 +59,8 @@ If `y` is unspecified, compute the Bar index between all pairs of columns of `x`
 julia> bar([1, 2], [1, 2])
 1
 ```
+
+See also [`bar!`](@ref), [`baz`](@ref), [`baaz`](@ref).
 """
 function bar(x::Number)
   bar = 0
