@@ -1,4 +1,4 @@
-export plus, sine, cosine 
+export plus, sine, cosine, binom 
 
 """
     plus(x, y)
