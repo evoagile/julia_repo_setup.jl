@@ -33,3 +33,16 @@ function cosine(x::Number)
   end
 end
 
+"""
+Here's some inline maths: ``\\sqrt[n]{1 + x + x^2 + \\ldots}``.
+
+Here's an equation:
+
+``\\frac{n!}{k!(n - k)!} = \\binom{n}{k}``
+
+This is the binomial coefficient.
+"""
+function binom(x::Number)
+  bino = 0
+  bino
+end
