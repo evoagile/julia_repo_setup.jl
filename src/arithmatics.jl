@@ -65,3 +65,8 @@ See also [`bar!`](@ref), [`baz`](@ref), [`baaz`](@ref).
 function bar(x::Number)
   bar = 0
 end
+
+@doc raw"""
+...
+"""
+f(x) = x
