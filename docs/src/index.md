@@ -60,6 +60,10 @@ Another list:
   - sub-item one
   - sub-item two
 
+```math
+f(a) = \frac{1}{2\pi}\int_{0}^{2\pi} (\alpha+R\cos(\theta))d\theta
+```
+
 ```@index
 
 ```
