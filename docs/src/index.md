@@ -66,6 +66,11 @@ Another list:
 f(a) = \frac{1}{2\pi}\int_{0}^{2\pi} (\alpha+R\cos(\theta))d\theta
 ```
 
+| Column One | Column Two | Column Three |
+| :--------- | ---------- | :----------: |
+| Row `1`    | Column `2` |              |
+| _Row_ 2    | **Row** 2  |  Column `3`  |
+
 [^1]: Numbered footnote text.
 [^note]: Named footnote text containing several toplevel elements.
 
@@ -77,6 +82,7 @@ f(a) = \frac{1}{2\pi}\int_{0}^{2\pi} (\alpha+R\cos(\theta))d\theta
     function func(x)
         # ...
     end
+
     ```
 
 ```@index
