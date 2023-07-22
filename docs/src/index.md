@@ -6,7 +6,12 @@ CurrentModule = julia_repo_setup
 
 Documentation for [julia_repo_setup](https://github.com/evoagile/julia_repo_setup.jl).
 
+```@docs
+ binom(x::Number)
+```
+
 ```@index
+
 ```
 
 ```@autodocs
