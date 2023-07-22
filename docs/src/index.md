@@ -43,7 +43,7 @@ end
 - link to [Example.jl Documentation](https://documenter.juliadocs.org/stable/man/guide/#Package-Guide)
 - link to [OpenCore Legacy Patcher](https://dortania.github.io/OpenCore-Legacy-Patcher/INSTALLER.html)
 
-A paragraph containing a numbered footnote [^1] and a named one [^named].
+A paragraph containing a numbered footnote [^1] and a named one [^note].
 
 Here's a quote:
 
