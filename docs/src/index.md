@@ -52,15 +52,11 @@ Here's a quote:
 Another list:
 
 - item one
-
 - item two
-
   ```
   f(x) = x
   ```
-
 - And a sublist:
-
   - sub-item one
   - sub-item two
 
