@@ -43,6 +43,12 @@ end
 - link to [Example.jl Documentation](https://documenter.juliadocs.org/stable/man/guide/#Package-Guide)
 - link to [OpenCore Legacy Patcher](https://dortania.github.io/OpenCore-Legacy-Patcher/INSTALLER.html)
 
+Here's a quote:
+
+> Julia is a high-level, high-performance dynamic programming language for
+> technical computing, with syntax that is familiar to users of other
+> technical computing environments.
+
 ```@index
 
 ```
