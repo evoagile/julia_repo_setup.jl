@@ -49,6 +49,21 @@ Here's a quote:
 > technical computing, with syntax that is familiar to users of other
 > technical computing environments.
 
+Another list:
+
+- item one
+
+- item two
+
+  ```
+  f(x) = x
+  ```
+
+- And a sublist:
+
+  - sub-item one
+  - sub-item two
+
 ```@index
 
 ```
