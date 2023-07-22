@@ -71,6 +71,20 @@ f(a) = \frac{1}{2\pi}\int_{0}^{2\pi} (\alpha+R\cos(\theta))d\theta
 | Row `1`    | Column `2` |              |
 | _Row_ 2    | **Row** 2  |  Column `3`  |
 
+!!! note
+
+    This is the content of the note.
+
+!!! tip
+
+    This is the content of the tip.
+
+!!! warning "Beware!"
+
+    And this is another one.
+
+    This warning admonition has a custom title: `"Beware!"`.
+
 [^1]: Numbered footnote text.
 [^note]: Named footnote text containing several toplevel elements.
 
