@@ -65,14 +65,18 @@ jobs:
           version: '1'
       - name: Configure doc environment
         run: |
-          pip show matplotlib
           julia --project=docs/ -e '
             using Pkg
             Pkg.develop(PackageSpec(path=pwd()))
             Pkg.instantiate()
+      - uses: julia-actions/julia-buildpkg@v1
+      - name: Rebuild PyCall package
+        run: |
+          pip show matplotlib
+          julia --project=docs/ -e '
+            using Pkg
             ENV["PYTHON"]="/usr/bin/python3.11"
             Pkg.build("PyCall")'
-      - uses: julia-actions/julia-buildpkg@v1
       - uses: julia-actions/julia-docdeploy@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
