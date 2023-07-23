@@ -148,3 +148,11 @@ savefig("g-plot.svg"); nothing # hide
 ```
 
 ![](g-plot.svg)
+
+```@example
+using Gadfly # hide
+plot([sin, x -> 2sin(x) + x], -2π, 2π)
+draw(SVG("plot.svg", 6inch, 4inch), ans); nothing # hide
+```
+
+![](plot.svg)
