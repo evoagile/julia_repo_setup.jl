@@ -71,12 +71,13 @@ jobs:
       - uses: julia-actions/julia-buildpkg@v1
       - name: Rebuild PyCall package
         run: |
+          conda create -n venv
+          source activate venv
           conda install -q -y matplotlib
           conda list | grep matplotlib
-          which python${{ matrix.python-version }}
           julia --project=docs/ -e '
             using Pkg
-            ENV["PYTHON"]="/opt/hostedtoolcache/Python/3.10.12/x64/bin/python3.10"
+            ENV["PYTHON"]=""
             Pkg.build("PyCall")
             '
       - uses: julia-actions/julia-docdeploy@v1
