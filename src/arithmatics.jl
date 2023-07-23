@@ -1,6 +1,6 @@
-export sine, cosine, binom, bar 
+export sine, cosine, binom, plus 
 
-"""@docs
+"""
     plus(x, y)
 Calculate add `x` and `y`.
 """
@@ -47,7 +47,7 @@ function binom(x::Number)
   bino
 end
 
-"""
+"""@docs
     bar(x[, y])
 
 Compute the Bar index between `x` and `y`.
