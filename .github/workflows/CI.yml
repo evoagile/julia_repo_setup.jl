@@ -65,11 +65,12 @@ jobs:
           version: '1'
       - name: Configure doc environment
         run: |
+          pip show matplotlib
           julia --project=docs/ -e '
             using Pkg
             Pkg.develop(PackageSpec(path=pwd()))
             Pkg.instantiate()
-            ENV["PYTHON"]="/usr/bin/python3.10"
+            ENV["PYTHON"]="/usr/bin/python3"
             Pkg.build("PyCall")'
       - uses: julia-actions/julia-buildpkg@v1
       - uses: julia-actions/julia-docdeploy@v1
