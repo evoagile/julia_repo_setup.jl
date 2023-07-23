@@ -14,6 +14,7 @@ Documentation for [julia_repo_setup](https://github.com/evoagile/julia_repo_setu
 
 ```@docs
 binom(x::Number)
+cosine(x::Number)
 ```
 
 This is a paragraph.
