@@ -125,7 +125,7 @@ A \ b
 First we define some functions
 
 ```@example 1
-using PyPlot # hide
+using Plots # hide
 f(x) = sin(2x) + 1
 g(x) = cos(x) - x
 ```
