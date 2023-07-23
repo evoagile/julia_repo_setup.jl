@@ -76,7 +76,7 @@ jobs:
           which python${{ matrix.python-version }}
           julia --project=docs/ -e '
             using Pkg
-            ENV["PYTHON"]="/usr/bin/python${{ matrix.python-version }}"
+            ENV["PYTHON"]="/opt/hostedtoolcache/Python/3.10.12/x64/bin/python3.10"
             Pkg.build("PyCall")
             '
       - uses: julia-actions/julia-docdeploy@v1
