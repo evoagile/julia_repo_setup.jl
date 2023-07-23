@@ -57,8 +57,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install matplotlib
+          conda install matplotlib
           python3 -V
       - uses: julia-actions/setup-julia@v1
         with:
@@ -73,7 +72,7 @@ jobs:
       - uses: julia-actions/julia-buildpkg@v1
       - name: Rebuild PyCall package
         run: |
-          pip show matplotlib
+          conda list
           julia --project=docs/ -e '
             using Pkg
             ENV["PYTHON"]="/usr/bin/python3.11"
