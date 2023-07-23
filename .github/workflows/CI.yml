@@ -43,21 +43,11 @@ jobs:
   docs:
     name: Documentation
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ['3.10']
     permissions:
       contents: write
       statuses: write
     steps:
       - uses: actions/checkout@v3
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
-        with:
-          python-version: ${{ matrix.python-version }}
-      - name: Install dependencies
-        run: |
-          python3 -V
       - uses: julia-actions/setup-julia@v1
         with:
           version: '1'
@@ -69,15 +59,6 @@ jobs:
             Pkg.instantiate()
             '
       - uses: julia-actions/julia-buildpkg@v1
-      - name: Rebuild PyCall package
-        run: |
-          conda install -q -y matplotlib
-          conda list | grep matplotlib
-          julia --project=docs/ -e '
-            using Pkg
-            ENV["PYTHON"]=""
-            Pkg.build("PyCall")
-            '
       - uses: julia-actions/julia-docdeploy@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
