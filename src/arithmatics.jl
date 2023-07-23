@@ -47,7 +47,7 @@ function binom(x::Number)
   bino
 end
 
-"""@docs
+"""
     bar(x[, y])
 
 Compute the Bar index between `x` and `y`.
