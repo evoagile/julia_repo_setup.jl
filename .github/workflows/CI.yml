@@ -71,6 +71,7 @@ jobs:
       - uses: julia-actions/julia-buildpkg@v1
       - name: Rebuild PyCall package
         run: |
+          conda init bash
           conda create -n venv
           conda activate -q -y venv
           conda install -q -y matplotlib
