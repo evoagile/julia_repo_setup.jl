@@ -1,6 +1,6 @@
-export plus, sine, cosine, binom, bar 
+export sine, cosine, binom, bar 
 
-"""
+"""@docs
     plus(x, y)
 Calculate add `x` and `y`.
 """
