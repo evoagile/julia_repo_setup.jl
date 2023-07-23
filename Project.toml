@@ -6,10 +6,12 @@ version = "0.1.0-DEV"
 [deps]
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 Example = "7876af07-990d-54b4-ab0e-23690620f79a"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
 
 [compat]
-Example = "0.5"
 Documenter = "0.27"
+Example = "0.5"
 julia = "1.8.5"
 
 [extras]
