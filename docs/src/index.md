@@ -194,3 +194,81 @@ iris = dataset("datasets", "iris")
 ```@example abc
 println(iris)
 ```
+
+```jldoctest
+julia> a = 1
+1
+
+julia> b = 2;
+
+julia> c = 3;  # comment
+
+julia> a + b + c
+6
+```
+
+```jldoctest
+julia> div(1, 0)
+ERROR: DivideError: integer division error
+[...]
+```
+
+```jldoctest mylabel
+julia> foo = 42
+42
+```
+
+```jldoctest mylabel
+julia> println(foo)
+42
+```
+
+```@meta
+DocTestSetup = quote
+    function foo(x)
+        return x^2
+    end
+end
+```
+
+```jldoctest
+julia> foo(2)
+4
+```
+
+```@meta
+DocTestSetup = nothing
+```
+
+```jldoctest; setup = :(foo(x) = x^2)
+julia> foo(2)
+4
+```
+
+```@meta
+DocTestFilters = r"[0-9\.]+ seconds \(.*\)"
+```
+
+```jldoctest
+julia> @time [1,2,3,4]
+  0.000003 seconds (5 allocations: 272 bytes)
+4-element Array{Int64,1}:
+ 1
+ 2
+ 3
+ 4
+```
+
+```@meta
+DocTestFilters = nothing
+```
+
+```jldoctest; filter = r"[0-9.]+ seconds (.*)"
+julia> @time [1,2,3,4]
+  0.000003 seconds (5 allocations: 272 bytes)
+4-element Array{Int64,1}:
+ 1
+ 2
+ 3
+ 4
+```
