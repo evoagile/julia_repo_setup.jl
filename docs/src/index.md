@@ -166,3 +166,31 @@ for color in 0:15
 end
 print("\e[m")
 ```
+
+```@example half-loop; continued = true
+for i in 1:3
+    j = i^2
+```
+
+Some text explaining what we should do with `j`
+
+```@example half-loop
+    println(j)
+end
+```
+
+```@repl
+a = 1
+b = 2
+a + b
+```
+
+```@setup abc
+using RDatasets
+using DataFrames
+iris = dataset("datasets", "iris")
+```
+
+```@example abc
+println(iris)
+```
