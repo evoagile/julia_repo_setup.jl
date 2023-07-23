@@ -72,7 +72,7 @@ jobs:
       - name: Rebuild PyCall package
         run: |
           conda create -n venv
-          source activate venv
+          conda activate -q -y venv
           conda install -q -y matplotlib
           conda list | grep matplotlib
           julia --project=docs/ -e '
