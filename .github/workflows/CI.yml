@@ -57,7 +57,6 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
-          conda install matplotlib
           python3 -V
       - uses: julia-actions/setup-julia@v1
         with:
