@@ -107,3 +107,44 @@ f(a) = \frac{1}{2\pi}\int_{0}^{2\pi} (\alpha+R\cos(\theta))d\theta
 ```@autodocs
 Modules = [julia_repo_setup]
 ```
+
+```@example
+a = 1
+b = 2
+a + b
+```
+
+```@example
+import Random # hide
+Random.seed!(1) # hide
+A = rand(3, 3)
+b = [1, 2, 3]
+A \ b
+```
+
+First we define some functions
+
+```@example 1
+using PyPlot # hide
+f(x) = sin(2x) + 1
+g(x) = cos(x) - x
+```
+
+and then we plot `f` over the interval from `-π` to `π`
+
+```@example 1
+x = range(-π, π; length=50)
+plot(x, f.(x), color = "red")
+savefig("f-plot.svg"); nothing # hide
+```
+
+![](f-plot.svg)
+
+and then we do the same with `g`
+
+```@example 1
+plot(x, g.(x), color = "blue")
+savefig("g-plot.svg"); nothing # hide
+```
+
+![](g-plot.svg)

@@ -69,17 +69,3 @@ end
 ...
 """
 f(x) = x
-
-```@example
-a = 1
-b = 2
-a + b
-```
-
-```@example
-import Random # hide
-Random.seed!(1) # hide
-A = rand(3, 3)
-b = [1, 2, 3]
-A \ b
-```
