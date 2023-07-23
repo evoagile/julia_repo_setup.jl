@@ -156,3 +156,13 @@ draw(SVG("plot.svg", 6inch, 4inch), ans); nothing # hide
 ```
 
 ![](plot.svg)
+
+```@example
+printstyled("Here are some colors:\n"; color=:red, bold=true)
+for color in 0:15
+    print("\e[38;5;$(color);48;5;$(color)m  ")
+    print("\e[49m", lpad(color, 3), " ")
+    color % 8 == 7 && println()
+end
+print("\e[m")
+```
