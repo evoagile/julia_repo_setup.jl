@@ -71,7 +71,8 @@ jobs:
       - uses: julia-actions/julia-buildpkg@v1
       - name: Rebuild PyCall package
         run: |
-          conda list
+          conda install matplotlib
+          conda list | grep matplotlib
           julia --project=docs/ -e '
             using Pkg
             ENV["PYTHON"]="/usr/bin/python${{ matrix.python-version }}"
