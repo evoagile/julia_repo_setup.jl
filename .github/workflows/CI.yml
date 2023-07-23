@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ['3.11']
+        python-version: ['3.10']
 
     steps:
       - uses: actions/checkout@v3
@@ -75,7 +75,7 @@ jobs:
             using Pkg
             Pkg.develop(PackageSpec(path=pwd()))
             Pkg.instantiate()
-            ENV["PYTHON"]="/usr/bin/python3.11"
+            ENV["PYTHON"]="/usr/bin/python3.10"
             Pkg.build("PyCall")'
       - uses: julia-actions/julia-buildpkg@v1
       - uses: julia-actions/julia-docdeploy@v1
