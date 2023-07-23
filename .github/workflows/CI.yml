@@ -71,7 +71,7 @@ jobs:
       - uses: julia-actions/julia-buildpkg@v1
       - name: Rebuild PyCall package
         run: |
-          conda install matplotlib
+          conda install -q -y matplotlib
           conda list | grep matplotlib
           julia --project=docs/ -e '
             using Pkg
