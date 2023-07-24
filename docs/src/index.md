@@ -12,7 +12,7 @@ Documentation for [julia_repo_setup](https://github.com/evoagile/julia_repo_setu
 
 # Images
 
-![Evoagile logo](assets/evoagile_logo.png)
+![Evoagile logo](assets/logo.png)
 
 # Functions
 
