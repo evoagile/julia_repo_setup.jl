@@ -6,6 +6,15 @@ CurrentModule = julia_repo_setup
 
 ```
 
+# Study Schedule (2023)
+
+|  Date  | Range                                         | Presenter |
+| :----: | :-------------------------------------------- | :-------: |
+| Aug 3  | How to setup julia repo in Github with Action |   Norel   |
+| Aug 10 | 1. Why Julia?                                 |  Kjeong   |
+| Aug 17 | 16. Organizing and modularizing your code     |   Norel   |
+| Aug 17 | 2. Julia as a calculator                      |  Kjeong   |
+
 # julia_repo_setup
 
 Documentation for [julia_repo_setup](https://github.com/evoagile/julia_repo_setup.jl).
@@ -65,11 +74,6 @@ Another list:
 ```math
 f(a) = \frac{1}{2\pi}\int_{0}^{2\pi} (\alpha+R\cos(\theta))d\theta
 ```
-
-| Column One | Column Two | Column Three |
-| :--------- | ---------- | :----------: |
-| Row `1`    | Column `2` |              |
-| _Row_ 2    | **Row** 2  |  Column `3`  |
 
 !!! note
 
