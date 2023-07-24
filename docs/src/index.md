@@ -252,7 +252,7 @@ DocTestFilters = r"[0-9\.]+ seconds \(.*\)"
 ```jldoctest
 julia> @time [1,2,3,4]
   0.000003 seconds (5 allocations: 272 bytes)
-4-element Array{Int64,1}:
+4-element Array{Int64}:
  1
  2
  3
@@ -266,7 +266,7 @@ DocTestFilters = nothing
 ```jldoctest; filter = r"[0-9.]+ seconds (.*)"
 julia> @time [1,2,3,4]
   0.000003 seconds (5 allocations: 272 bytes)
-4-element Array{Int64,1}:
+4-element Array{Int64}:
  1
  2
  3
