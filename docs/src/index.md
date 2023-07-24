@@ -16,11 +16,6 @@ Documentation for [julia_repo_setup](https://github.com/evoagile/julia_repo_setu
 
 # Functions
 
-```@docs
-binom(x::Number)
-cosine(x::Number)
-```
-
 This is a paragraph.
 
     function func(x)
