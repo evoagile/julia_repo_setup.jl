@@ -10,6 +10,10 @@ CurrentModule = julia_repo_setup
 
 Documentation for [julia_repo_setup](https://github.com/evoagile/julia_repo_setup.jl).
 
+# Images
+
+![Evoagile logo](assets/evoagile_logo.png)
+
 # Functions
 
 ```@docs
