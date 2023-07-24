@@ -3,17 +3,23 @@ CurrentModule = julia_repo_setup
 ```
 
 ```@contents
-
+Pages = [
+"julia_2nd_lang/setup_github_env.md",
+"julia_2nd_lang/chap1_why_julia.md",
+"julia_2nd_lang/chap16_organizing_and_modularizing_your_code.md",
+"julia_2nd_lang/chap2_julia_as_a_calculator.md"
+]
+Depth = 1
 ```
 
 # Study Schedule (2023)
 
-|  Date  | Range                                         | Presenter |
-| :----: | :-------------------------------------------- | :-------: |
-| Aug 3  | How to setup julia repo in Github with Action |   Norel   |
-| Aug 10 | 1. Why Julia?                                 |  Kjeong   |
-| Aug 17 | 16. Organizing and modularizing your code     |   Norel   |
-| Aug 17 | 2. Julia as a calculator                      |  Kjeong   |
+|  Date  | Range                                           | Presenter |
+| :----: | :---------------------------------------------- | :-------: |
+| Aug 3  | [Setup Julia Repo in GitHub with Actions](@ref) |   Norel   |
+| Aug 10 | [Why Julia?](@ref)                              |  Kjeong   |
+| Aug 17 | [Organizing and modularizing your code](@ref)   |   Norel   |
+| Aug 17 | [Julia as a calculator](@ref)                   |  Kjeong   |
 
 # julia_repo_setup
 
