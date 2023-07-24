@@ -19,7 +19,15 @@ makedocs(;
     edit_link = "master",
     assets = String[],
   ),
-  pages = ["Home" => "index.md"],
+  pages = [
+    "Home" => "index.md",
+    "Julia as a Second Language" => Any[
+      "Setup Environments" => "julia_2nd_lang/setup_github_env.md",
+      "Why Julia?" => "julia_2nd_lang/chap1_why_julia.md",
+      "Setup Packages" => "julia_2nd_lang/chap16_organizing_and_modularizing_your_code.md",
+      "Julia as a Calculator" => "chap2_julia_as_a_calculator.md",
+    ],
+  ],
 )
 
 deploydocs(;
