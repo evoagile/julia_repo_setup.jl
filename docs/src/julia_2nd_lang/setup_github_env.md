@@ -10,7 +10,7 @@ $ sudo emerge -av julia
 
 ```
 
-The problem to Gentoo packcage manager to install is slow upgrade speed for Julia.
+The problem to Gentoo package manager to install is slow upgrade speed for Julia.
 In this time, latest stable version version of Julia in the
 [official site](https://julialang.org/downloads/) is 1.9.2 but Gentoo still has
 1.8.5 as the latest.
@@ -28,8 +28,11 @@ $ ln -s julia ~/.local/bin/julia  <-- This should be earlier path than /usr/bin/
 
 ## Setup Julia language server for Neovim
 
-This setup is based on cloned [Neovim-from-scratch](https://github.com/erdosxx/Neovim-from-scratch/tree/27_Julia_REPL) repo.
-With the lsp setting file for Julia, [julials.lua](https://github.com/erdosxx/Neovim-from-scratch/blob/27_Julia_REPL/lua/user/lsp/settings/julials.lua), we need to setup Julia environment as following commend.
+This setup is based on cloned
+[Neovim-from-scratch](https://github.com/erdosxx/Neovim-from-scratch/tree/27_Julia_REPL) repo.
+With the LSP([Language Server Protocol](https://microsoft.github.io/language-server-protocol/))
+setting file for Julia,
+[julials.lua](https://github.com/erdosxx/Neovim-from-scratch/blob/27_Julia_REPL/lua/user/lsp/settings/julials.lua), we need to setup Julia environment as following commend.
 
 ```shell
 $ julia --project=~/.julia/environments/nvim-lspconfig \
