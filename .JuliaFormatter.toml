@@ -1,4 +1,3 @@
-	style = "yas"
+	style = "sciml"
 	indent = 2
 	margin = 79
-	whitespace_typedefs = true
