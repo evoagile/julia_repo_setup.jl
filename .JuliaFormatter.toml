@@ -1,0 +1,4 @@
+	style = "yas"
+	indent = 2
+	margin = 79
+	whitespace_typedefs = true
