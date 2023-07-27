@@ -53,7 +53,7 @@ After `make` command, `neovim` is launched and open `Example.jl` source file wit
 some errors. If you wait a moment and no problem occur to install, you can find
 some bullets as following screenshot.
 
-![Example.jl with bullets](../assets/julia_lsp_results.png)
+![Example.jl with bullets](../assets/julia_lsp_result.png)
 
 Then just quit `neovim` and continue and finish installation.
 To test installation, open any exmaple julia file and change keyword `function` to
