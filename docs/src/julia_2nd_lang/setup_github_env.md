@@ -62,7 +62,7 @@ messages as following, your installation is successful.
 ![Success to install](assets/julia_lsp_install_success.png)
 
 If you have any error to load Julia LSP, you can find following errror message in `neovim`.
-![Fail message](assets/julia_lsp_erro.png)
+![Fail message](assets/julia_lsp_error.png)
 
 ## Setup Julia Formatter for Neovim
 
