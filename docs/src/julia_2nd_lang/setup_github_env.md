@@ -27,7 +27,7 @@ $ make
 $ ln -s julia ~/.local/bin/julia  <-- This should be earlier path than /usr/bin/julia
 ```
 
-## Setup Julia language server for Neovim
+## Setup Julia language server with formatter for Neovim
 
 !!! note
 
@@ -64,9 +64,15 @@ messages as following, your installation is successful.
 If you have any error to load Julia LSP, you can find following errror message in `neovim`.
 ![Fail message](../assets/julia_lsp_error.png)
 
-## Setup Julia Formatter for Neovim
+As you can find in the following, `LanguageServer` package depends on
+`JuliaFormatter`, `StaticLint`, and `SymbolServer`. That means we do not have to
+install `JuliaFormatter` separately.
 
-### Setup Julia Language server in NeoVim
+```@example
+using Pkg
+Pkg.add("LanguageServer")
+
+```
 
 ## Use [PkgTemplates](https://github.com/JuliaCI/PkgTemplates.jl) to generate repository
 

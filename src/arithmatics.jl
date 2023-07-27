@@ -27,10 +27,10 @@ Calculate the cosine of an angle `x` given in radians.
 """
 function cosine(x::Number)
   n = 9
-  total = 0
-  mapreduce(+, 0:n) do i
-    return (-1)^i * x^(2i) / factorial(2i)
+  total = return mapreduce(+, 0:n) do i
+    (-1)^i * x^(2i) / factorial(2i)
   end
+  total
 end
 
 """
