@@ -10,11 +10,12 @@ $ sudo emerge -av julia
 
 ```
 
-The problem to Gentoo package manager to install is slow upgrade speed for Julia.
-In this time, latest stable version version of Julia in the
+The problem to install Julia by [Gentoo package manager](https://wiki.gentoo.org/wiki/Portage)
+is slow upgrade speed.
+In this time, July 27 2023, latest stable version version of Julia in the
 [official site](https://julialang.org/downloads/) is 1.9.2 but Gentoo still has
-1.8.5 as the latest.
-To overcome to this gap, according to the instruction in [Julia GitHub](https://github.com/JuliaLang/julia)
+1.8.5 as the latest one.
+To overcome this gap, according to the instruction in [Julia GitHub](https://github.com/JuliaLang/julia)
 we can easily install it by compiling source.
 
 ```shell
@@ -28,15 +29,24 @@ $ ln -s julia ~/.local/bin/julia  <-- This should be earlier path than /usr/bin/
 
 ## Setup Julia language server for Neovim
 
-This setup is based on cloned
-[Neovim-from-scratch](https://github.com/erdosxx/Neovim-from-scratch/tree/27_Julia_REPL) repo.
-With the LSP([Language Server Protocol](https://microsoft.github.io/language-server-protocol/))
-setting file for Julia,
-[julials.lua](https://github.com/erdosxx/Neovim-from-scratch/blob/27_Julia_REPL/lua/user/lsp/settings/julials.lua), we need to setup Julia environment as following commend.
+!!! note
+
+    This setup is based on cloned
+    [Neovim-from-scratch](https://github.com/erdosxx/Neovim-from-scratch/tree/27_Julia_REPL) repo
+    and [Github repo: evoagile_configs](https://github.com/erdosxx/evoagile_configs).
+
+To setup LSP([Language Server Protocol](https://microsoft.github.io/language-server-protocol/)) with
+[julials.lua](https://github.com/erdosxx/Neovim-from-scratch/blob/27_Julia_REPL/lua/user/lsp/settings/julials.lua)
+file in [Neovim-from-scratch](https://github.com/erdosxx/Neovim-from-scratch/tree/27_Julia_REPL),
+we need to setup `nvim-lspconfig` environment first.
+Using [stow](https://packages.gentoo.org/packages/app-admin/stow) tool,
+we can copy `Makefile` to `~/.julia/environments/nvim-lspconfig/`.
 
 ```shell
-$ julia --project=~/.julia/environments/nvim-lspconfig \
--e 'using Pkg; Pkg.add("LanguageServer")'
+$ cd localgit/evoagile_configs   <-- if your local cloned repo is in localgit
+$ stow -t ~ julia
+$ cd ~/.julia/environments/nvim-lspconfig/
+$ make
 ```
 
 ## Setup Julia Formatter for Neovim
