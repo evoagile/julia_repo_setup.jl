@@ -56,6 +56,10 @@ some bullets as following screenshot.
 ![Example.jl with bullets](assets/julia_lsp_results.png)
 
 Then just quit `neovim` and continue and finish installation.
+To test installation, open any exmaple julia file and change keyword `function` to
+`func tion` and at the same line, input `gl`. If you have some bullets and
+messages as following, your installation is successful.
+![Success to install](assets/julia_lsp_install_success.png)
 
 ## Setup Julia Formatter for Neovim
 
