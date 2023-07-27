@@ -61,6 +61,9 @@ To test installation, open any exmaple julia file and change keyword `function` 
 messages as following, your installation is successful.
 ![Success to install](assets/julia_lsp_install_success.png)
 
+If you have any error to load Julia LSP, you can find following errror message in `neovim`.
+![Fail message](assets/julia_lsp_erro.png)
+
 ## Setup Julia Formatter for Neovim
 
 ### Setup Julia Language server in NeoVim
