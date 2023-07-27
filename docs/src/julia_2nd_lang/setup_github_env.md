@@ -32,8 +32,8 @@ $ ln -s julia ~/.local/bin/julia  <-- This should be earlier path than /usr/bin/
 !!! note
 
     This setup is based on cloned
-    [Neovim-from-scratch](https://github.com/erdosxx/Neovim-from-scratch/tree/27_Julia_REPL) repo
-    and [Github repo: evoagile_configs](https://github.com/erdosxx/evoagile_configs).
+    [Neovim-from-scratch](https://github.com/erdosxx/Neovim-from-scratch/tree/27_Julia_REPL)
+    and [Github repo: evoagile_configs](https://github.com/erdosxx/evoagile_configs) repo.
 
 To setup LSP([Language Server Protocol](https://microsoft.github.io/language-server-protocol/)) with
 [julials.lua](https://github.com/erdosxx/Neovim-from-scratch/blob/27_Julia_REPL/lua/user/lsp/settings/julials.lua)
@@ -48,6 +48,14 @@ $ stow -t ~ julia
 $ cd ~/.julia/environments/nvim-lspconfig/
 $ make
 ```
+
+After `make` command, `neovim` is launched and open `Example.jl` source file with
+some errors. If you wait a moment and no problem occur to install, you can find
+some bullets as following screenshot.
+
+![Example.jl with bullets](assets/julia_lsp_results.png)
+
+Then just quit `neovim` and continue and finish installation.
 
 ## Setup Julia Formatter for Neovim
 
