@@ -29,7 +29,7 @@ $ ln -s julia ~/.local/bin/julia  <-- This should be earlier path than /usr/bin/
 
 ## Setup Julia language server with formatter for Neovim
 
-!!! note
+!!! info
 
     This setup is based on cloned
     [Neovim-from-scratch](https://github.com/erdosxx/Neovim-from-scratch/tree/27_Julia_REPL)
@@ -76,8 +76,36 @@ Pkg.add("LanguageServer")
 
 To format your code, you can find related commends in
 [keymaps.lua](https://github.com/erdosxx/Neovim-from-scratch/blob/27_Julia_REPL/lua/user/keymaps.lua)
-file. Type `:Format` in command are or `<space key>f`(when `<localleader>` = `<space key>`)
+file. Type `:Format` in command or `<space key>f`(when `<localleader>` = `<space key>`)
 in normal mode, whole code in the file will be formatted.
+
+!!! info
+
+    To get supported to Julia formatting, we can also try to use
+    [JuliaFormatter.vim](https://github.com/kdheepak/JuliaFormatter.vim).
+    This only supports formatting and no other LSP function but
+    range format supporting in visual mode and
+    definition of format option in configuration file are possible.
+    This uses [JuliaFormatter](https://github.com/domluna/JuliaFormatter.jl)
+    independently.
+    However, I found that when we use Julia LSP with this package, LSP was
+    crashed occasionally. So I decided to uninstall it.
+
+To define format parameters in Julia code is not easy in
+[LSP configuration file](https://github.com/erdosxx/Neovim-from-scratch/blob/27_Julia_REPL/lua/user/lsp/settings/julials.lua).
+The solution is use ['.JuliaFormatter.toml'](https://domluna.github.io/JuliaFormatter.jl/dev/config/)
+file in every repo. So it can be convenient to add this file to
+PkgTemplates. (See below section)
+
+!!! info
+
+    The useful configuration to format is
+    - style = "sciml"
+    - indent = 2
+    - margin = 79
+    For style options, see [YAS](https://domluna.github.io/JuliaFormatter.jl/dev/yas_style/),
+    [Blue](https://domluna.github.io/JuliaFormatter.jl/dev/blue_style/), and
+    [SciML](https://domluna.github.io/JuliaFormatter.jl/dev/sciml_style/).
 
 ## Use [PkgTemplates](https://github.com/JuliaCI/PkgTemplates.jl) to generate repository
 
