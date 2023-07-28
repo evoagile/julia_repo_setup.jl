@@ -56,7 +56,7 @@ some bullets as following screenshot.
 ![Example.jl with bullets](../assets/julia_lsp_result.png)
 
 Then just quit `neovim` and continue and finish installation.
-To test installation, open any exmaple julia file and change keyword `function` to
+To test installation, open any example Julia file and change keyword `function` to
 `func tion` and at the same line, input `gl`. If you have some bullets and
 messages as following, your installation is successful.
 ![Success to install](../assets/julia_lsp_install_success.png)
@@ -73,6 +73,11 @@ using Pkg
 Pkg.add("LanguageServer")
 
 ```
+
+To format your code, you can find related commends in
+[keymaps.lua](https://github.com/erdosxx/Neovim-from-scratch/blob/27_Julia_REPL/lua/user/keymaps.lua)
+file. Type `:Format` in command are or `<space key>f`(when `<localleader>` = `<space key>`)
+in normal mode, whole code in the file will be formatted.
 
 ## Use [PkgTemplates](https://github.com/JuliaCI/PkgTemplates.jl) to generate repository
 
