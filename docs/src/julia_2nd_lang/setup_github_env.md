@@ -109,7 +109,26 @@ PkgTemplates. (See below section)
 
 ## Use [PkgTemplates](https://github.com/JuliaCI/PkgTemplates.jl) to generate repository
 
+PkgTemplates simplifies the process of setting up the initial file structure for
+a new repository, specifically [CI](https://en.wikipedia.org/wiki/Continuous_integration)
+integration with GitHub actions.
+To use PkgTemplates, we recommend to install it in system default Julia environment,
+for example, `v1.9` as following.
+
+```@example
+using Pkg
+Pkg.activate()    <-- Use system default env
+Pkg.add("PkgTemplates")
+```
+
+After installing it, we need to setup the template. It would be convenient to keep it
+in the
+[`startup.jl`](https://github.com/erdosxx/evoagile_configs/blob/master/julia/.julia/config/startup.jl)
+file for easy reuse.
+
 ## Use [GitHub-CLI](https://cli.github.com/) to create repository in GitHub
+
+## Playing with REPL
 
 ## References
 
