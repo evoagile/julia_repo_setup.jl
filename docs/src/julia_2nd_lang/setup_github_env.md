@@ -117,7 +117,7 @@ for example, `v1.9` as following.
 
 ```@example
 using Pkg
-Pkg.activate()    <-- Use system default env
+Pkg.activate()
 Pkg.add("PkgTemplates")
 ```
 
