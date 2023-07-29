@@ -125,6 +125,13 @@ After installing it, we need to setup the template. It would be convenient to ke
 in the
 [`startup.jl`](https://github.com/erdosxx/evoagile_configs/blob/master/julia/.julia/config/startup.jl)
 file for easy reuse.
+Because this file runs at every starting time for Julia, we can use generate function as following
+example.
+
+```julia
+julia> genGithubRepo("ecoinfo", "JuliaStudy.jl")
+
+```
 
 ## Use [GitHub-CLI](https://cli.github.com/) to create repository in GitHub
 
